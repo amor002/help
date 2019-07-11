@@ -1,0 +1,72 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    
+}
+
+html {
+    background-color: #eee;
+}
+
+#cover-img {
+    width: 100%;
+    height: 200px;  
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 360px;
+    border: 7px solid #ddd;
+    outline: none;
+    background-image: url("images/person-img.jpeg");
+    background-size: cover;
+    
+}
+
+
+.container {
+    position: absolute;
+    top: 100px;
+    width: 80%;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container *, .container .content * {
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-row {
+    margin-top: 30px;
+}
+
+.button-row  a {
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+
+hr {
+    margin: 0px 70px 0px 70px;
+}
+
