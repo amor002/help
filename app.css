@@ -1,72 +1,44 @@
-
 * {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     color: #333;
-    
 }
 
 html {
     background-color: #eee;
 }
 
-#cover-img {
-    width: 100%;
-    height: 200px;  
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 360px;
-    border: 7px solid #ddd;
-    outline: none;
-    background-image: url("images/person-img.jpeg");
-    background-size: cover;
-    
-}
-
-
-.container {
-    position: absolute;
-    top: 100px;
-    width: 80%;
-    
-}
-
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.container *, .container .content * {
-    margin-bottom: 10px;
-}
-
-.item {
+.card {
+    box-shadow: 1px 2px 10px 1px #111;
+    background-color: #FFF;
     display: flex;
-    flex-direction: column;
-}
-
-.content {
-    display: flex;
+    flex-direction: row;
+    width: 65%;
+    max-width: 80%;
+    max-height: 500px;
     justify-content: space-between;
-}
-
-.button-row {
-    margin-top: 30px;
-}
-
-.button-row  a {
-    padding: 10px;
-    font-weight: 700;
-    text-decoration: none;
-    margin-left: 5px;
     
 }
 
-hr {
-    margin: 0px 70px 0px 70px;
+.card img {
+    max-width: 50%;
+    height: inherit;
+    max-height: inherit;
 }
 
+.card .content {
+    flex: 1;
+    padding: 20px;
+}
+
+.card .content * {
+    margin: 20px;
+}
